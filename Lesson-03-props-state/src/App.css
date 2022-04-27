@@ -8,18 +8,9 @@
 
 body {
   font-family: "Roboto" Courier, monospace;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 40px;
 }
 .app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 16px;
 }
 .card-container {
   display: flex;
@@ -47,3 +38,44 @@ body {
 .card-title {
   margin-bottom: 8px;
 }
+
+.card-container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Car project css */
+.car-container {
+  display: flex;
+  align-items: center;
+}
+
+.car-container button {
+  margin-right: 16px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 10px 16px;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: white;
+}
+
+.btn-red {
+  border: 1px solid red;
+  color: red;
+}
+
+.car-img img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* CSS for phone store project */
