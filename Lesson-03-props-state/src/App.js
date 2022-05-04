@@ -3,6 +3,7 @@ import "./App.css";
 import CarColor from "./components/CarColor";
 import Count from "./components/Count";
 import UserCard from "./components/UserCard";
+import DemoForm from "./DemoForm";
 import PhoneStore from "./PhoneStore/PhoneStore";
 
 class App extends Component {
@@ -99,7 +100,8 @@ class App extends Component {
       <div>
         {/* <Count />;  */}
         {/* <CarColor /> */}
-        <PhoneStore />
+        {/* <PhoneStore /> */}
+        <DemoForm />
       </div>
     );
   }
