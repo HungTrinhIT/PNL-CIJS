@@ -2,28 +2,37 @@ import React, { Component } from 'react'
 
 class DemoForm extends Component {
     state = {
-        username: "",
-        email: "",
-        password: "",
-        confirmPassword: ""
+        user: {
+            username: "",
+            email: "",
+            password: "",
+            confirmPassword: ""
+        },
+        errors: {}
     }
 
     onChangeHandler = e => {
         const { name, value } = e.target
+
         this.setState({
-            [name]: value
+            ...this.state,
+            user: {
+                [name]: value // username: value, email: value
+            }
         })
     }
 
     onSubmitHandler = e => {
         e.preventDefault();
         //logic
-        alert(`Hey ${this.state.username}, sign up successfully`)
+        alert(`Hey ${this.state.user.username}, sign up successfully`)
         this.setState({
-            username: "",
-            email: "",
-            password: "",
-            confirmPassword: ""
+            user: {
+                username: "",
+                email: "",
+                password: "",
+                confirmPassword: ""
+            }
         })
     }
 
