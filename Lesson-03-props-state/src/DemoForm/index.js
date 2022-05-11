@@ -14,10 +14,17 @@ class DemoForm extends Component {
     onChangeHandler = e => {
         const { name, value } = e.target
 
+        // Cho truong hop multi-level 
+        // const user = this.state.user;
+        // user[name] = value
+        // this.setState({
+        //     user: user
+        // })
+
         this.setState({
-            ...this.state,
             user: {
-                [name]: value // username: value, email: value
+                ...this.state.user,
+                [name]: value
             }
         })
     }

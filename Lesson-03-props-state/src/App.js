@@ -5,6 +5,7 @@ import Count from "./components/Count";
 import UserCard from "./components/UserCard";
 import DemoForm from "./DemoForm";
 import PhoneStore from "./PhoneStore/PhoneStore";
+import StudentManagement from "./StudentManagement/StudentManagement";
 
 class App extends Component {
   constructor(props) {
@@ -101,7 +102,9 @@ class App extends Component {
         {/* <Count />;  */}
         {/* <CarColor /> */}
         {/* <PhoneStore /> */}
-        <DemoForm />
+        {/* <DemoForm /> */}
+
+        <StudentManagement />
       </div>
     );
   }

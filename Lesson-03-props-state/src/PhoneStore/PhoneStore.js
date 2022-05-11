@@ -69,6 +69,7 @@ class PhoneStore extends Component {
     selectedProduct = products.find((product) => product.id === id);
 
     this.setState({
+
       selectedProduct, //selectedProduct: selectedProduct
     });
   };
