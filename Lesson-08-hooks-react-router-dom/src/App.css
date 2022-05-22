@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto" Courier, monospace;
+}
+
+ul, p{
+  margin-bottom: 0;
+}
+.header{
+  background-color: #1877f2;
+  color: #fff;
+  padding: 16px 0;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.nav-list a{
+  color: #fff;
+  text-decoration: none;
+}
